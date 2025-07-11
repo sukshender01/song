@@ -12,7 +12,7 @@ st.markdown("Type your lyrics and choose a voice. We’ll turn your lyrics into 
 
 with st.spinner("Loading models..."):
     melody_gen = pipeline("text-to-audio", model="facebook/musicgen-small")
-    tts_gen = pipeline("text-to-speech", model="facebook/tts_transformer-es-css10")
+    tts_gen = pipeline("text-to-speech", model="espnet/kan-bayashi_ljspeech_vits")
 
 lyrics = st.text_area("Enter your lyrics here", height=300)
 voice = st.radio("Choose a voice:", ["male", "female"])
