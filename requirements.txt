@@ -2,3 +2,4 @@ streamlit
 transformers
 torchaudio
 torch
+sentencepiece
